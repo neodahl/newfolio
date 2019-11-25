@@ -1,0 +1,53 @@
+body {
+  font-family: 'Noto Sans KR';
+  font-weight: normal;
+  font-style: normal;
+  line-height: 1.4;
+  color: #333;
+  word-break: keep-all;
+}
+
+
+.main_header {
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  height: 50px;
+  color: #fff;
+}
+.btnNavMenu {
+  position: relative;
+  width: 50px;
+  height: 50px;
+  background-color: transparent;
+}
+.btnNavMenu::before,
+.btnNavMenu::after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  margin-left: -15px;
+  width: 30px;
+  height: 2px;
+  background-color: #fff;
+  transition: all 0.2s ease;
+}
+.btnNavMenu::before {
+  top: 15px;
+  box-shadow: 0 10px 0 0 #fff;
+}
+.btnNavMenu::after {
+  top: 35px;
+}
+.btnNavMenu.is_close::before,
+.btnNavMenu.is_close::after {
+  top: 50%;
+  margin-top: -1px;
+}
+.btnNavMenu.is_close::before {
+  /* box-shadow: 0 10px 0 0 rgba(0, 0, 0, 0); */
+  box-shadow: none;
+  transform: rotate(45deg);
+}
+.btnNavMenu.is_close::after {
+  transform: rotate(-45deg);
+}
