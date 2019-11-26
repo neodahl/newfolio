@@ -12,15 +12,15 @@
 </head>
 <body>
   <!-- [Start] Global Navigation -->
-  <header class="main_header">
-    <button type="button" class="btnNavMenu is_close" aria-label="메뉴 열기"></button>
-    <nav>
-      <a href="#about">About</a>
-      <a href="#projects">Projects</a>
-      <a href="#contact">Contact</a>
+  <header class="mainHeader">
+    <button type="button" class="btnNavMenu" aria-label="메뉴 열기"></button>
+    <nav class="mainNav">
+      <a href="#about"><span>About</span></a>
+      <a href="#projects"><span>Projects</span></a>
+      <a href="#contact"><span>Contact</span></a>
     </nav>
   </header>
-  <!-- [Start] Global Navigation -->
+  <!-- [End] Global Navigation -->
 
   <div class="main">
     <section class="top">
@@ -39,9 +39,13 @@
       <h2>Contact</h2>
     </section>
 
+    <div style="height: 1000px;"></div>
+
   </div>
 
   <script src="./asset/js/lib/jquery-3.4.1.min.js"></script>
+  <script src="./asset/js/lib/TweenMax.min.js"></script>
+  <script src="./asset/js/lib/TimelineMax.min.js"></script>
   <script src="./asset/js/main.js"></script>
 </body>
 </html>
