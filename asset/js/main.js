@@ -46,16 +46,16 @@
   navOpenTL.pause();
 
   navOpenTL
-    .to($btnNavMenu, 0, {position: 'fixed', top: 0, left: 0})
-    .set($btnNavMenu, {className: '+=is_closed'})
+    .to($btnNavMenu, 0.3, {position: 'fixed', top: 0, left: 0}, 'sync')
+    .set($btnNavMenu, {className: '+=is_closed'}, 'sync')
     .set($mainHeader, {className: '+=offCanvas'})
-		.to($mainNav, 0, {left: 0});
+		.to($mainNav, 0, {left: 0}, 'sync');
 		
     $btnNavMenu.on('click', function(){
       if($(this).hasClass('is_closed')) {
-        navOpenTL.reverse();
+				navOpenTL.reverse();
       } else {
-        navOpenTL.restart();
+				navOpenTL.restart();
       }
     });
  
