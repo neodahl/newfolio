@@ -56,15 +56,15 @@ body {
 .btnNavMenu::after {
   top: 30px;
 }
-.btnNavMenu.is_closed::before,
-.btnNavMenu.is_closed::after {
+.btnNavMenu.is_close::before,
+.btnNavMenu.is_close::after {
   top: 50%;
   margin-top: -1px;
 }
-.btnNavMenu.is_closed::before {
+.btnNavMenu.is_close::before {
   transform: rotate(-135deg);
 }
-.btnNavMenu.is_closed::after {
+.btnNavMenu.is_close::after {
   transform: rotate(135deg);
 }
 
