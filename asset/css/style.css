@@ -133,5 +133,10 @@ h1 {
   color: #555;
 }
 h1 > span {
-  display: block;
+  display: inline-block;
 }
+/* h1 > span::after {
+  content: '';
+  display: block;
+  border-top: 2px solid #555;
+} */

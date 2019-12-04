@@ -42,11 +42,6 @@
 	}
 
 
-
-
-	
-
-
   // App Nav Show and Hide
   var $mainHeader = $('.mainHeader');
   var $mainNav = $('.mainNav');
@@ -62,13 +57,25 @@
 		.set($mainHeader, {className: '+=offCanvas'}, 'sync2')
 		.staggerFrom($mainNavMenus, 0.3, {autoAlpha: 0, y: 5}, 0.1, 'sync2');
 		
-    $btnNavMenu.on('click', function(){
-      if($(this).hasClass('is_close')) {
-				navOpenTL.reverse();
-      } else {
-				navOpenTL.restart();
-      }
-    });
+	$btnNavMenu.on('click', function(){
+		if($(this).hasClass('is_close')) {
+			navOpenTL.reverse();
+		} else {
+			navOpenTL.restart();
+		}
+	});
+		
+	// Top Visual Animation
+	var topVisualTL = new TimelineMax();
+
+	topVisualTL
+		.to($('h1'), 0, { top: '45%'})
+		.to($('h1 span:first-of-type'), 0, { fontSize: '2.5em'})
+		.from($('h1 span:first-of-type'), 1.5, { autoAlpha: 0, y: 30})
+		.to($('h1'), 0.2, { top: '41%'}, 'sync')
+		.to($('h1 span:first-of-type'), 1, { fontSize: '1em'}, 'sync')
+		.staggerFrom($('h1 span:nth-of-type(n+2)'), 1, { autoAlpha: 0, y: 5 }, 0.3)
+		;
  
 
 
