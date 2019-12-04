@@ -16,6 +16,7 @@ body {
 .mainHeader {
   position: fixed;
   top: 0;
+  z-index: 100;
   width: 100%;
   background-color: rgba(0, 0, 0, 0.7);
   height: 50px;
@@ -110,6 +111,27 @@ body {
 }
 
 
-.main {
+
+
+.top {
+  position: relative;
   padding-top: 50px; /* .mainHeader 높이값 과 동일하게 */
+  width: 100vw;
+  height: 100vh;
+  background: url('../img/bg_top.jpg') center center no-repeat;
+  background-size: cover;
+  box-sizing: border-box;
+}
+h1 {
+  position: absolute;
+  top: 41%;
+  left: 28%;
+  line-height: 1;
+  font-family: 'PT Sans';
+  font-weight: 400;
+  font-size: 50px;
+  color: #555;
+}
+h1 > span {
+  display: block;
 }
