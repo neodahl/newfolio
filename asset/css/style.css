@@ -13,6 +13,14 @@ body {
   outline: 2px solid red;
 } */
 
+/* Media Queries */
+/* 
+@media screen and (min-width: 768px) { Tablet start}
+@media screen and (min-width: 1024px) { Laptop, Desktop  start} 
+*/
+
+
+
 .mainHeader {
   position: fixed;
   top: 0;
@@ -76,7 +84,6 @@ body {
   height: 100vh;
   width: 300px;
   background-color: rgba(0, 0, 0, 0.9);
-  transition: all 0.3s ease;
   left: -100%;
 }
 .mainNav.is_opened {

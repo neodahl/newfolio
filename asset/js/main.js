@@ -52,17 +52,16 @@
   navOpenTL
     .to($btnNavMenu, 0.3, {position: 'fixed', top: 0, left: 0}, 'sync')
     .set($btnNavMenu, {className: '+=is_close'}, 'sync')
-		.to($mainNav, 0, {left: 0}, 'sync')
+		.to($mainNav, 0.3, {left: 0}, 'sync')
 		.set($mainHeader, {className: '+=offCanvas'}, 'sync2')
 		.staggerFrom($mainNavMenus, 0.3, {autoAlpha: 0, y: 5}, 0.1, 'sync2');
 	
 	navCloseTL
 		.set($btnNavMenu, {className: '-=is_close'}, 'sync')
 		.set($mainHeader, {className: '-=offCanvas'})
-		.to($mainNav, 0.3, {left: '-100%'})
 		.staggerTo($mainNavMenus, 0.3, {autoAlpha: 0, y: 5}, 0.1, 'sync')
-		.to($btnNavMenu, 0, {position: 'relative'})
-		;
+		.to($mainNav, 0.3, {left: '-100%'}, '-=0.2')
+		.to($btnNavMenu, 0, {position: 'relative'});
 		
 	$btnNavMenu.on('click', function(){
 		if($(this).hasClass('is_close')) {
@@ -73,8 +72,6 @@
 			$(this).attr({'aria-label': '메뉴 닫기'})	
 		}
 	});
-		
-
 })(window, window.document, jQuery);
 
 
