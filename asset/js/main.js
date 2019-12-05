@@ -64,7 +64,6 @@
 		.to($btnNavMenu, 0, {position: 'relative'})
 		;
 		
-		
 	$btnNavMenu.on('click', function(){
 		if($(this).hasClass('is_close')) {
 			navCloseTL.restart();
@@ -75,7 +74,16 @@
 		}
 	});
 		
-	// Top Visual Animation
+
+})(window, window.document, jQuery);
+
+
+
+
+/* Top Visual Animation */
+(function(global, document , $){
+	'use strict'
+	
 	var topVisualTL = new TimelineMax();
 
 	topVisualTL
@@ -88,12 +96,10 @@
 		.from($('h1 span:nth-of-type(3)'), 1.5, { autoAlpha: 0, y: 10 }, '-=0.8')
 		;
 
-
- 
-
-
-
 })(window, window.document, jQuery);
+
+
+
 
 
 /* Focus Event */

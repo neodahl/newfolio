@@ -145,7 +145,7 @@ h1 > span {
 
 
 .about {
-  padding: 20% 10%;
+  padding: 30% 10% 20%;
   background: url('../img/bg_about_landscape5.jpg') 70% 50% no-repeat;
   background-size: cover;
 }
