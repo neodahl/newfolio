@@ -84,7 +84,7 @@ body {
   height: 100vh;
   width: 300px;
   background-color: rgba(0, 0, 0, 0.9);
-  left: -100%;
+  left: -300px;
 }
 .mainNav.is_opened {
   left: 0;

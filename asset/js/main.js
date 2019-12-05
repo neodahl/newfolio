@@ -60,7 +60,7 @@
 		.set($btnNavMenu, {className: '-=is_close'}, 'sync')
 		.set($mainHeader, {className: '-=offCanvas'})
 		.staggerTo($mainNavMenus, 0.3, {autoAlpha: 0, y: 5}, -0.1, 'sync')
-		.to($mainNav, 0.3, {left: '-100%'}, '-=0.2')
+		.to($mainNav, 0.3, {left: '-300px'}, '-=0.1')
 		.to($btnNavMenu, 0, {position: 'relative'});
 		
 	$btnNavMenu.on('click', function(){
