@@ -50,9 +50,9 @@
   var navCloseTL = new TimelineMax({paused: true});
 
   navOpenTL
-    .to($btnNavMenu, 0.3, {position: 'fixed', top: 0, left: 0}, 'sync')
-    .set($btnNavMenu, {className: '+=is_close'}, 'sync')
-		.to($mainNav, 0.3, {left: 0}, 'sync')
+    .to($btnNavMenu, 0.3, {position: 'fixed', top: 0, left: 0}, 'sync1')
+    .set($btnNavMenu, {className: '+=is_close'}, 'sync1')
+		.to($mainNav, 0.3, {left: 0}, 'sync1')
 		.set($mainHeader, {className: '+=offCanvas'}, 'sync2')
 		.staggerFrom($mainNavMenus, 0.3, {autoAlpha: 0, y: 5}, 0.1, 'sync2');
 	
@@ -86,9 +86,10 @@
 	topVisualTL
 		.to($('h1'), 0, { top: '45%'}, 0.5)
 		.to($('h1 span:first-of-type'), 0, { fontSize: '2.5em'})
-		.from($('h1 span:first-of-type'), 1.2, { autoAlpha: 0, y: 50})
-		.to($('h1'), 0.2, { top: '41%'}, 'sync')
-		.to($('h1 span:first-of-type'), 1, { fontSize: '1em', ease: Power1.inOut, }, 'sync')
+		.from($('h1 span:first-of-type'), 0.6, { autoAlpha: 0}, 'sync1')
+		.from($('h1 span:first-of-type'), 1.2, { y: 50}, 'sync1')
+		.to($('h1'), 0.2, { top: '41%'}, 'sync2')
+		.to($('h1 span:first-of-type'), 1, { fontSize: '1em', ease: Power1.inOut, }, 'sync2')
 		.from($('h1 span:nth-of-type(2)'), 1.5, { autoAlpha: 0, x: -10 })
 		.from($('h1 span:nth-of-type(3)'), 1.5, { autoAlpha: 0, y: 10 }, '-=0.8')
 		;
