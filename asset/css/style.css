@@ -140,3 +140,75 @@ h1 > span {
   display: block;
   border-top: 2px solid #555;
 } */
+
+
+
+
+.about {
+  padding: 20% 10%;
+  background: url('../img/bg_about_landscape5.jpg') 70% 50% no-repeat;
+  background-size: cover;
+}
+.about .profile_box {
+  width: 250px;
+  height: 250px;
+  margin: 0 auto;
+  border-radius: 50%;
+  overflow: hidden;
+  transition: all 0.2s ease;
+}
+.about .profile_box img {
+  width: 100%;
+}
+
+.about .introduction {
+  width: 90%;
+  margin: 1em auto;
+  text-shadow: 0px 0px 4px #fff;
+}
+.about .introduction em {
+  font-size: 1.1em;
+  font-weight: bold;
+  color: #123789;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

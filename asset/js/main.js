@@ -69,12 +69,12 @@
 	var topVisualTL = new TimelineMax();
 
 	topVisualTL
-		.to($('h1'), 0, { top: '45%'})
+		.to($('h1'), 0, { top: '45%'}, 0.5)
 		.to($('h1 span:first-of-type'), 0, { fontSize: '2.5em'})
 		.from($('h1 span:first-of-type'), 1.2, { autoAlpha: 0, y: 30})
 		.to($('h1'), 0.2, { top: '41%'}, 'sync')
 		.to($('h1 span:first-of-type'), 1, { fontSize: '1em', ease: Power1.inOut, }, 'sync')
-		.staggerFrom($('h1 span:nth-of-type(n+2)'), 1, { autoAlpha: 0, y: 5 }, 0.6)
+		.staggerFrom($('h1 span:nth-of-type(n+2)'), 1.5, { autoAlpha: 0, y: 5 }, 0.8)
 		;
 
 
