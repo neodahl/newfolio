@@ -116,7 +116,7 @@ body {
 .top {
   position: relative;
   padding-top: 50px; /* .mainHeader 높이값 과 동일하게 */
-  width: 100vw;
+  width: 100%;
   height: 100vh;
   background: url('../img/bg_top.jpg') center center no-repeat;
   background-size: cover;
