@@ -46,9 +46,7 @@
   var $mainHeader = $('.mainHeader');
   var $mainNav = $('.mainNav');
   var $mainNavMenus = $('.mainNav > a');
-  var navOpenTL = new TimelineMax();
-
-  navOpenTL.pause();
+  var navOpenTL = new TimelineMax({paused: true});
 
   navOpenTL
     .to($btnNavMenu, 0.3, {position: 'fixed', top: 0, left: 0}, 'sync')
@@ -71,10 +69,11 @@
 	topVisualTL
 		.to($('h1'), 0, { top: '45%'}, 0.5)
 		.to($('h1 span:first-of-type'), 0, { fontSize: '2.5em'})
-		.from($('h1 span:first-of-type'), 1.2, { autoAlpha: 0, y: 30})
+		.from($('h1 span:first-of-type'), 1.2, { autoAlpha: 0, y: 50})
 		.to($('h1'), 0.2, { top: '41%'}, 'sync')
 		.to($('h1 span:first-of-type'), 1, { fontSize: '1em', ease: Power1.inOut, }, 'sync')
-		.staggerFrom($('h1 span:nth-of-type(n+2)'), 1.5, { autoAlpha: 0, y: 5 }, 0.8)
+		.from($('h1 span:nth-of-type(2)'), 1.5, { autoAlpha: 0, x: -10 })
+		.from($('h1 span:nth-of-type(3)'), 1.5, { autoAlpha: 0, y: 10 }, '-=0.8')
 		;
 
 
