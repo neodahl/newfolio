@@ -92,7 +92,7 @@
 		.to('h1 span:first-of-type', 1, {fontSize: '1em', ease: Power1.inOut}, 'sync2')
 		.from('h1 span:nth-of-type(2)', 1.5, {autoAlpha: 0, x: -10})
 		.from('h1 span:nth-of-type(3)', 1.5, {autoAlpha: 0, y: 10}, '-=0.8')
-		// .to(CSSRulePlugin.getRule('h1 span:nth-of-type(3):after'), {cssRule:{color:"red"}})
+		.from(CSSRulePlugin.getRule('h1 > span:last-of-type::after'), 0.5, {cssRule:{opacity:0}}, '-=0.5')
 		;
 
 })(window, window.document, jQuery);
