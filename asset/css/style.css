@@ -15,6 +15,7 @@ body {
 
 /* Media Queries */
 /* 
+Mobile First Design
 @media screen and (min-width: 768px) { Tablet start}
 @media screen and (min-width: 1024px) { Laptop, Desktop  start} 
 */
@@ -165,7 +166,7 @@ h1 > span:last-of-type::after {
   background: url('../img/bg_about_landscape5.jpg') 70% 50% no-repeat;
   background-size: cover;
 }
-.about .profile_box {
+.profile_img {
   width: 250px;
   height: 250px;
   margin: 0 auto;
@@ -173,22 +174,42 @@ h1 > span:last-of-type::after {
   overflow: hidden;
   transition: all 0.2s ease;
 }
-.about .profile_box img {
+.profile_img img {
   width: 100%;
 }
 
-.about .introduction {
+.introduction {
   width: 90%;
-  margin: 1em auto;
+  margin: 2em auto;
   text-shadow: 0px 0px 4px #fff;
+  transition: all 0.2s ease;
 }
-.about .introduction em {
+.introduction small {
+  font-size: 0.8em;
+}
+.introduction em {
   font-size: 1.1em;
   font-weight: bold;
   color: #123789;
 }
-
-
+.introduction del {
+  opacity: 0.7;
+}
+@media screen and (min-width: 768px) {
+  .about {
+    padding: 20% 0;
+  }
+  .introduction {
+    width: 610px;
+    margin: 4em auto;
+    font-size: 20px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .about {
+    padding: 150px 0;
+  }
+}
 
 
 
