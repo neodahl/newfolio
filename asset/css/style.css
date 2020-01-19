@@ -164,6 +164,7 @@ h1 > span:last-of-type::after {
 .about {
   padding: 30% 10% 20%;
   background: url('../img/bg_about_landscape5.jpg') 70% 50% no-repeat;
+  /* background: url('../img/bg_about_landscape4.jpg') 70% 0% no-repeat; */
   background-size: cover;
   background-attachment: fixed;
 }
@@ -191,7 +192,7 @@ h1 > span:last-of-type::after {
 .introduction em {
   font-size: 1.1em;
   font-weight: bold;
-  color: #123789;
+  color: #218126;
 }
 .introduction del {
   opacity: 0.7;
@@ -213,8 +214,18 @@ h1 > span:last-of-type::after {
 }
 
 
+.projects {
+  padding: 10vw 0;
+  height: 100vh;
+  background: url('../img/bg_project_portrait.jpg') 10% 30% no-repeat;
+  background-size: cover;
+}
+.projects h2 {
+  font-size: 10vw;
+  text-align: center;
+  color: #fff;
 
-
+}
 
 
 
