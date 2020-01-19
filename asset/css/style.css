@@ -165,6 +165,7 @@ h1 > span:last-of-type::after {
   padding: 30% 10% 20%;
   background: url('../img/bg_about_landscape5.jpg') 70% 50% no-repeat;
   background-size: cover;
+  background-attachment: fixed;
 }
 .profile_img {
   width: 250px;

@@ -54,7 +54,7 @@
     .set($btnNavMenu, {className: '+=is_close'}, 'sync1')
 		.to(mainNav, 0.3, {left: 0}, 'sync1')
 		.set($mainHeader, {className: '+=offCanvas'}, 'sync2')
-		.staggerFrom(mainNavMenus, 0.3, {autoAlpha: 0, y: 5}, 0.1, 'sync2');
+		.staggerFrom(mainNavMenus, 0.5, {autoAlpha: 0, y: 5}, 0.1, 'sync2');
 	
 	navCloseTL
 		.set($btnNavMenu, {className: '-=is_close'}, 'sync')
