@@ -36,15 +36,20 @@ button {
 	border: none;
 	font-family: inherit;
 	cursor: pointer;
+	background-color: transparent;
 }
 a {
 	text-decoration: none;
 	color: inherit;
 }
 input {
+	margin: 0;
 	border: none;
 	box-sizing: border-box;
+	-webkit-appearance: none;
+	-moz-appearance: none;
 	appearance: none;
+	-webkit-border-radius: 0;
 }
 [type=text]::-ms-clear,
 [type=text]::-ms-reveal,
@@ -61,7 +66,13 @@ select {
   -moz-appearance: none;
 	appearance: none;
 }
+select::-ms-expand {
+	display: none;
+}
 button, input, select {
+	vertical-align: top;
+}
+img {
 	vertical-align: top;
 }
 iframe {
