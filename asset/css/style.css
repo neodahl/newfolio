@@ -1,14 +1,7 @@
-body {
-  font-family: 'Noto Sans KR';
-  font-weight: normal;
-  font-style: normal;
-  line-height: 1.4;
-  color: #333;
-  word-break: keep-all;
-}
 
 
-/* Media Queries */
+
+/*** Media Queries ***/
 /* 
 Mobile First Design
 @media screen and (min-width: 768px) { Tablet start}
@@ -17,10 +10,19 @@ Mobile First Design
 
 
 
+/*** Layout ***/
+@media screen and (min-width: 1024px) {
+  .layout_center {
+    width: 1024px;
+    margin: 0 auto;
+  }
+} 
 
 
 
 
+
+/* Section01 */
 .section01 {
   position: relative;
   width: 100vw;
@@ -31,13 +33,25 @@ Mobile First Design
   background-color: #191e3b;
   color: #fff;
 }
+.section01 .layout_center {
+  height: 100vh;
+}
 
 
 .title_contaienr {
   position: relative;
   top: 30%;
   left: 10vw;
+  z-index: 5;
 }
+@media screen and (min-width: 1024px) {
+  .title_contaienr {
+    top: 245px;
+    left: 10%;
+  }
+}
+
+
 
 h1 > small {
   display: block;
@@ -62,6 +76,23 @@ h1 + small {
   font-weight: 100;
   color: #fff;
 }
+@media screen and (min-width: 1024px) {
+  h1 br {
+    display: none;
+  }
+  h1 > small {
+    font-size: 26px;
+  }
+  h1 > span {
+    margin-top: 0;
+    font-size: 80px;
+  }
+  h1 + small {
+    margin-top: 0;
+    font-size: 28px;
+  }
+}
+
 
 .section01 .img_conatainer {
   position: absolute;
@@ -72,7 +103,18 @@ h1 + small {
 .section01 .img_conatainer img {
   width: 100%
 }
-.right_msg {
+@media screen and (min-width: 1024px) {
+  .section01 .img_conatainer {
+    top: 0;
+    left: 40%;
+  }
+  .section01 .img_conatainer img {
+    width: auto;
+    height: 100%;
+  }
+}
+
+.section01 .right_msg {
   position: absolute;
   top: 70vw;
   right: 5vw;
@@ -83,7 +125,12 @@ h1 + small {
   transform: rotate(90deg);
   transform-origin: top right;
 }
-
+@media screen and (min-width: 1024px) {
+  .section01 .right_msg {
+    top: 70%;
+    font-size: 13px;
+  }
+}
 
 
 
