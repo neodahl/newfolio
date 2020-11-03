@@ -11,6 +11,8 @@ Mobile First Design
 
 
 /*** Layout ***/
+
+
 @media screen and (min-width: 1024px) {
   .layout_center {
     width: 1024px;
@@ -44,7 +46,7 @@ Mobile First Design
   left: 10vw;
   z-index: 5;
 }
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 768px) {
   .title_contaienr {
     top: 245px;
     left: 10%;
@@ -76,7 +78,7 @@ h1 + small {
   font-weight: 100;
   color: #fff;
 }
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 768px) {
   h1 br {
     display: none;
   }
@@ -103,14 +105,14 @@ h1 + small {
 .section01 .img_conatainer img {
   width: 100%
 }
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 768px) {
   .section01 .img_conatainer {
     top: 0;
     left: 40%;
   }
   .section01 .img_conatainer img {
     width: auto;
-    height: 100%;
+    height: 100vh;
   }
 }
 
@@ -125,7 +127,7 @@ h1 + small {
   transform: rotate(90deg);
   transform-origin: top right;
 }
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 768px) {
   .section01 .right_msg {
     top: 70%;
     font-size: 13px;

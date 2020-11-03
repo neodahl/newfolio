@@ -213,17 +213,21 @@ caption.a11y_hidden {
 
 
 /* etc */
-@media screen and (min-width: 1024px) {
-	.only_mb {
+@media screen and (min-width: 768px) {
+	.hide_start_mb {
 		display: none !important;
 	}
 }
-@media screen and (max-width: 1023px) {
+@media screen and (max-width: 767px) {
+	.hide_until_mb {
+		display: none !important;
+	}
+}
+/* @media screen and (max-width: 1023px) {
 	.start_pc {
 		display: none !important;
 	}
-
-}
+} */
 
 
 /* .ellipsis {
