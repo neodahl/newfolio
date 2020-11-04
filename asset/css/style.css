@@ -153,7 +153,7 @@ h1 + small {
 	background-repeat: no-repeat; */
 	background: #19192a url('../img/mb_section02_bg.jpg') center bottom no-repeat;
 	background-size: 100%;
-	color: #868ea3;
+	color: #8194c2;
 }
 
 .strength li {
@@ -215,7 +215,8 @@ h1 + small {
 
 
 .career_container {
-	padding: 10vw;
+	margin-top: 30vw;
+	padding: 10vw 7vw;
 	box-sizing: border-box;
 }
 
@@ -233,7 +234,6 @@ h1 + small {
 	text-align: center;
 	box-sizing: border-box;
 }
-
 .box_title::before,
 .box_title::after {
 	content: '';
@@ -263,13 +263,41 @@ h1 + small {
 }
 
 
+.career_container > p {
+	margin: 10vw 0 5vw;
+	font-size: 3.33vw;
+	/* font-weight: 500; */
+	letter-spacing: 0.4em;
+	line-height: 2;
+	color: #fff;
+}
+.career_container > p span {
+	display: block;
+	color: #8194c2;
+	font-size: 2.77vw;
+	font-weight: 100;
+}
+.career_container > p small {
+	display: block;
+	margin-top: 1em;
+	font-size: 2.4vw;
+	font-weight: 100;
+}
 
+.career_container > span {
+	display: block;
+	margin-bottom: 10vw;
+	font-size: 4.44vw;
+	font-weight: 700;
+	color: #fff;
+}
 
-
-
-
-
-
+.career_container ul li {
+	margin-top: 7vw;
+	font-size: 3.14vw;
+	font-weight: 300;
+	line-height: 2;
+}
 
 
 
