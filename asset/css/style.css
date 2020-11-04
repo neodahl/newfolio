@@ -155,25 +155,75 @@ h1 + small {
 	background-size: 100%;
 	color: #8194c2;
 }
+@media screen and (min-width: 1024px) {
+	.section02 {
+		position: relative;
+		padding: 0;
+		background-image: url('../img/pc_section02_bg.jpg');
+		background-position: 40% center;
+		background-size: cover;
+	}
+	.section02 .layout_center {
+		position: relative;
+		padding: 500px 0 140px;
+	}
+}
 
 .strength li {
 	position: relative;
-	padding-left: 12.4vw;
+	padding-left: 12vw;
 }
+
 .strength li:first-child {
 	margin-left: 7.3vw;
-	padding-top: 18vw;
+	padding-top: 12vw;
 }
 .strength li:nth-child(2) {
 	margin-top: 18vw;
 	margin-left: 13.7vw;
-	padding-top: 20vw;
+	padding-top: 15vw;
 }
 .strength li:nth-child(3) {
 	margin-top: 24vw;
 	margin-left: 21.11vw;
 	padding-top: 10vw; 
 }
+@media screen and (min-width: 1024px) {
+	.strength li {
+		margin: 0 !important;
+		padding-top: 0 !important;
+		position: absolute;
+		padding-left: 40px;
+	}
+	.strength li:first-child {
+		top: 290px;
+		left: 10%;
+		margin-left: 0;
+	}
+	.strength li:first-child > span:empty {
+		height: 430px;
+		top: -340px;
+	}
+	.strength li:nth-child(2) {
+		top: 520px;
+		left: 43%;
+	}
+	.strength li:nth-child(2) > span:empty {
+		height: 600px;
+		top: -530px;
+	}
+	.strength li:nth-child(3) {
+		top: 200px;
+		left: 66%;
+	}
+	.strength li:nth-child(3) > span:empty {
+		height: 300px;
+		top: -210px;
+	}
+
+}
+
+
 .strength li > span:empty {
 	position: absolute;
 	top: 0;
@@ -196,16 +246,39 @@ h1 + small {
 	border: 1px solid #009cff;
 	box-sizing: border-box;
 }
+@media screen and (min-width: 1024px) {
+	.strength li > span:empty::before {
+		width: 16px;
+		height: 16px;
+		bottom: -16px;
+		transform: translateX(-46%);
+	}
+}
+
+
 .strength li > em {
+	line-height: 3;
 	font-size: 3.8vw;
 	font-weight: 900;
 	color: #fff;
 	letter-spacing: 0.1em;
 }
+
 .strength li p {
 	line-height: 1.9;
 	font-size: 4.07vw;
+	font-weight: 100;
 	letter-spacing: 0.6em;
+	color: #868ea3;
+}
+@media screen and (min-width: 1024px) {
+	.strength li > em {
+		font-size: 16px;
+	}
+	.strength li p {
+		font-size: 20px;
+		letter-spacing: 0.4em;
+	}
 }
 .strength li p span {
 	color: #fff;
