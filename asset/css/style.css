@@ -222,28 +222,45 @@ h1 + small {
 .box_title {
 	position: relative;
 	display: block;
-	width: 40vw;
-	padding: 5vw 0;
-	border: 1vw solid #fff;
-	/* border-bottom: 3px solid #fff; */
+	width: 50vw;
+	padding: 4vw 0;
+	border-left: 1vw solid #fff;
+	border-bottom: 1vw solid #fff;
 	font-size: 4.62vw;
 	font-weight: 900;
+	letter-spacing: 0.1em;
 	color: #fff;
 	text-align: center;
+	box-sizing: border-box;
 }
-.box_title::before {
+
+.box_title::before,
+.box_title::after {
 	content: '';
 	position: absolute;
-	top: -2vw;
-	left: 9vw;
-	height: 9vw;
-	width: 30vw;
-	border-top: 4vw solid #19192a;
-	border-right: 4vw solid #19192a;
-
 }
-
-
+.box_title::before {
+	top: 0;
+	left: -1px;
+	height: 0;
+	width: 8vw;
+	border-top: 1vw solid #fff;
+}
+.box_title::after {
+	bottom: -1px;
+	right: 0;
+	height: 5vw;
+	width: 0;
+	border-right: 1vw solid #fff;
+}
+.box_title span::after {
+	content: '+';
+	position: absolute;
+	top: -0.5em;
+	right: 0.2em;
+	font-size: 7vw;
+	color: #009cff;
+}
 
 
 
