@@ -145,7 +145,7 @@ h1 + small {
 
 /* Section02 */
 .section02 {
-	padding: 16.38vw 0 18vw;
+	padding: 16.38vw 0 8vw;
 	/* background-image: url('../img/mb_section02_bg.jpg');
 	background-position: center bottom;
 	background-color: #19192a;
@@ -402,9 +402,9 @@ h1 + small {
 	color: #fff;
 }
 .career_container ul li {
-	margin-top: 7vw;
+	margin-top: 6vw;
 	font-size: 3.14vw;
-	font-weight: 300;
+	font-weight: 100;
 	line-height: 2;
 }
 .career_container ul li span {
@@ -450,12 +450,49 @@ h1 + small {
 	}
 }
 
-
-
-
-
-
-
+.skills {
+	margin-top: 8vw;
+	color: #fff;
+}
+.skills dt {
+	margin-bottom: 1em;
+	font-size: 4vw;
+}
+.skills dt:nth-of-type(n+2) {
+	margin-top: 1.5em;
+}
+.skills dd span {
+	display: inline-flex;
+	width: 60px;
+	height: 60px;
+	border-radius: 50%;
+	background-color: #fff;
+	/* text-align: center; */
+	justify-content: center;
+	align-items: center;
+}
+.skills dd span:nth-of-type(n+2) {
+	margin-left: 7px;
+}
+.skills dd span img {
+	height: 43px;
+}
+/* @media screen and (min-width: 1024px) {
+	.skills {
+		margin-top: 50px;
+	}
+	.skills dt {
+		font-size: 14px;
+		font-weight: 900;
+	}
+	.skills dd span {
+		width: 51px;
+		height: 51px;
+	}
+	.skills dd span img {
+		
+	}
+} */
 
 
 
