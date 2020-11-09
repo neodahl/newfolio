@@ -170,6 +170,12 @@ a, button {
 /* NanumSquare */
 @font-face {
 	font-family: 'NanumSquare';
+	font-weight: 300;
+	src: local('NanumSquareL.woff'), 
+			 url('../font/NanumSquare/NanumSquareL.woff') format('woff'),
+ }
+@font-face {
+	font-family: 'NanumSquare';
 	font-weight: 400;
 	src: local('NanumSquareR.woff'), 
 			 url('../font/NanumSquare/NanumSquareR.woff') format('woff');
@@ -179,22 +185,14 @@ a, button {
 	font-weight: 700;
 	src: local('NanumSquareB.woff'), 
 			 url('../font/NanumSquare/NanumSquareB.woff') format('woff'),
-			 
  }
  @font-face {
 	font-family: 'NanumSquare';
 	font-weight: 800;
 	src: local('NanumSquareEB.woff'), 
 			 url('../font/NanumSquare/NanumSquareEB.woff') format('woff'),
-			 
  }
- @font-face {
-	font-family: 'NanumSquare';
-	font-weight: 300;
-	src: local('NanumSquareL.woff'), 
-			 url('../font/NanumSquare/NanumSquareL.woff') format('woff'),
-			 
- }
+
 
 /*** Base Style ***/
 body {
