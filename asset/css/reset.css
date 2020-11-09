@@ -167,6 +167,34 @@ a, button {
 			 url('../font/NotoSansKrV11/noto-sans-kr-v11-korean_latin-900.svg#NotoSansKR') format('svg'); /* Legacy iOS */
 }
 
+/* NanumSquare */
+@font-face {
+	font-family: 'NanumSquare';
+	font-weight: 400;
+	src: local('NanumSquareR.woff'), 
+			 url('../font/NanumSquare/NanumSquareR.woff') format('woff');
+ }
+ @font-face {
+	font-family: 'NanumSquare';
+	font-weight: 700;
+	src: local('NanumSquareB.woff'), 
+			 url('../font/NanumSquare/NanumSquareB.woff') format('woff'),
+			 
+ }
+ @font-face {
+	font-family: 'NanumSquare';
+	font-weight: 800;
+	src: local('NanumSquareEB.woff'), 
+			 url('../font/NanumSquare/NanumSquareEB.woff') format('woff'),
+			 
+ }
+ @font-face {
+	font-family: 'NanumSquare';
+	font-weight: 300;
+	src: local('NanumSquareL.woff'), 
+			 url('../font/NanumSquare/NanumSquareL.woff') format('woff'),
+			 
+ }
 
 /*** Base Style ***/
 body {
