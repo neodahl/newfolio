@@ -457,7 +457,7 @@ h1 + small {
 .skills dt {
 	margin-bottom: 1em;
 	font-size: 4vw;
-	font-weight: 900;
+	font-weight: 500;
 }
 .skills dt:nth-of-type(n+2) {
 	margin-top: 1.5em;
@@ -508,9 +508,33 @@ h1 + small {
 	overflow: hidden;
 }
 .section03 h2 {
+	position: relative;
+	margin-bottom: 1.5em;
 	padding-left: 13.881vw;
 	font-size: 10.926vw;
 }
+.section03 h2::before {
+	content: '';
+	display: block;
+	position: absolute;
+	top: -1vw;
+	left: 0;
+	width: 9.72vw;
+	height: 9.72vw;
+	background: url('../img/section03_tit_mark.png') center center no-repeat;
+	background-size: contain;
+}
+.section03 h2::after {
+	content: '';
+	display: block;
+	position: absolute;
+	bottom: 0;
+	right: -1vw;
+	width: 9vw;
+	border-top: 2px solid #009cff;
+	transform: rotate(-45deg);
+}
+
 .section03 h2 span {
 	color: #fff;
 }
@@ -531,6 +555,19 @@ h1 + small {
 	height: 100vw;
 	/* background-color: cyan; */
 }
+.section03 .bg_container::after {
+	content: 'A PERFECTIONIST PUBLISHER';
+	position: absolute;
+	top: 80vw;
+	right: 5vw;
+	/* font-family: 'Noto Sans KR'; */
+	font-size: 1.851vw;
+	font-weight: 100;
+	letter-spacing: 0.4em;
+	color: #656565;
+	transform: rotate(90deg);
+	transform-origin: top right;
+}
 .section03 .bg_container [class*="line_"] {
 	position: absolute;
 	width: 200%;
@@ -538,12 +575,15 @@ h1 + small {
 	transform: rotate(-45deg);
 }
 .section03 .bg_container .line_1 {
-	left: -75vw;
+	left: -75%;
 }
 .section03 .bg_container .line_2 {
 	top: 20vw;
-	left: -59vw;
+	left: -59%;
 	border-width: 32vw;
+}
+.section03 .bg_container .line_3 {
+	display: none;
 }
 
 
