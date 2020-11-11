@@ -147,28 +147,24 @@ h1 + small {
 /* Section02 */
 .section02 {
 	padding: 16.38vw 0 8vw;
-	/* background-image: url('../img/mb_section02_bg.jpg');
-	background-position: center bottom;
-	background-color: #19192a;
-	background-size: cover;
-	background-repeat: no-repeat; */
 	background: #19192a url('../img/mb_section02_bg.jpg') center bottom no-repeat;
 	background-size: 100%;
 	color: #8194c2;
 	overflow: hidden;
 }
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 768px) {
 	.section02 {
 		position: relative;
-		padding: 880px 0 140px;
+		padding: 450px 0 140px;
 		background-image: url('../img/pc_section02_bg.jpg');
 		background-position: 40% center;
 		background-size: cover;
 	}
-	/* .section02 .layout_center {
-		position: relative;
-		padding: 500px 0 140px;
-	} */
+}
+@media screen and (min-width: 1024px) {
+	.section02 {
+		padding-top: 880px;
+	}
 }
 
 .strength li {
@@ -190,39 +186,71 @@ h1 + small {
 	margin-left: 21.11vw;
 	padding-top: 10vw; 
 }
-@media screen and (min-width: 1024px) {
+
+
+@media screen and (min-width: 768px) {
 	.strength li {
+		position: absolute;
 		margin: 0 !important;
 		padding-top: 0 !important;
-		position: absolute;
+		padding-left: 0;
+	}
+	.strength li:first-child {
+		top: 210px;
+		left: 5%;
+		margin-left: 0;
+	}
+	.strength li:first-child > span:empty {
+		height: 430px;
+    top: -445px;
+    left: 6px;
+	}
+	.strength li:nth-child(2) {
+    top: 400px;
+    left: 42%;
+	}
+	.strength li:nth-child(2) > span:empty {
+		height: 600px;
+		top: -615px;
+		left: 6px;
+	}
+	.strength li:nth-child(3) {
+		top: 90px;
+		left: 66%;
+	}
+	.strength li:nth-child(3) > span:empty {
+		height: 300px;
+		top: -315px;
+		left: 6px;
+	}
+}
+@media screen and (min-width: 1024px) {
+	.strength li {
 		padding-left: 40px;
 	}
 	.strength li:first-child {
 		top: 290px;
 		left: 10%;
-		margin-left: 0;
 	}
 	.strength li:first-child > span:empty {
-		height: 430px;
 		top: -340px;
+		left: 0;
 	}
 	.strength li:nth-child(2) {
 		top: 520px;
-		left: 43%;
+		left: 45%;
 	}
 	.strength li:nth-child(2) > span:empty {
-		height: 600px;
 		top: -530px;
+		left: 0;
 	}
 	.strength li:nth-child(3) {
 		top: 200px;
-		left: 66%;
 	}
 	.strength li:nth-child(3) > span:empty {
-		height: 300px;
 		top: -210px;
+		left: 0;
 	}
-
 }
 
 
@@ -248,7 +276,7 @@ h1 + small {
 	border: 1px solid #009cff;
 	box-sizing: border-box;
 }
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 768px) {
 	.strength li > span:empty::before {
 		width: 16px;
 		height: 16px;
@@ -256,6 +284,15 @@ h1 + small {
 		transform: translateX(-46%);
 	}
 }
+/* 필요없을수도 */
+/* @media screen and (min-width: 1024px) {
+	.strength li > span:empty::before {
+		width: 16px;
+		height: 16px;
+		bottom: -16px;
+		transform: translateX(-46%);
+	}
+} */
 
 
 .strength li > em {
@@ -265,7 +302,6 @@ h1 + small {
 	color: #fff;
 	letter-spacing: 0.1em;
 }
-
 .strength li p {
 	line-height: 1.9;
 	font-size: 4.07vw;
@@ -273,7 +309,10 @@ h1 + small {
 	letter-spacing: 0.6em;
 	color: #868ea3;
 }
-@media screen and (min-width: 1024px) {
+
+
+
+@media screen and (min-width: 768px) {
 	.strength li > em {
 		font-size: 16px;
 	}
@@ -282,11 +321,14 @@ h1 + small {
 		letter-spacing: 0.4em;
 	}
 }
+@media screen and (min-width: 1024px) {
+	.strength li p {
+		letter-spacing: 0.6em;
+	}
+}
 .strength li p span {
 	color: #fff;
 }
-
-
 
 
 .career_container {
@@ -295,7 +337,6 @@ h1 + small {
 	box-sizing: border-box;
 }
 @media screen and (min-width: 1024px) {
-
 	.section02 .layout_center {
 		position: relative;
 		padding-left: 44%;
