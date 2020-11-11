@@ -334,7 +334,7 @@ h1 + small {
 		width: 100%;
 		box-sizing: border-box;
 	}
-	 {
+	.career_container {
 		margin-left: 5%;
 		padding: 0;
 	}
