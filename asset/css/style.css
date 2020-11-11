@@ -586,7 +586,7 @@ h1 + small {
 }
 @media screen and (min-width: 1200px) {
 	.section03 .layout_center {
-		max-width: 1200px;
+		max-width: 1300px;
 	}
 	.section03 h2 {
 		margin-bottom: 2em;
@@ -596,7 +596,7 @@ h1 + small {
 	}
 	.section03 .layout_center > p:nth-of-type(4),
 	.section03 .layout_center > p:nth-of-type(2) {
-		left: 35%;
+		left: 37%;
 	}
 	.section03 .layout_center > p:nth-of-type(2) {
 		position: absolute;
