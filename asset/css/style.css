@@ -891,11 +891,6 @@ h1 + small {
 .list_project .prview {
 	display: block;
 }
-/* .list_project .prview img {
-	width: 100%;
-} */
-
-
 .list_project li:nth-child(1) .prview {
 	display: flex;
 	justify-content: center;
@@ -925,12 +920,12 @@ h1 + small {
 		top: 50%;
 		right: 0;
 		width: 60%;
-		max-width: 500px;
 		transform: translateY(-50%);
 	}
 	.list_project li:nth-child(1) .prview {
 		width: 65%;
 		height: 350px;
+		max-width: 566px;
 	}
 	.list_project li:nth-child(2) {
 		padding-bottom: 80px;
@@ -987,7 +982,6 @@ h1 + small {
 	.preview_group a:nth-of-type(3),
 	.preview_group a:nth-of-type(4) {
 		transform: translateX(20%);
-
 }
 
 
