@@ -815,8 +815,8 @@ h1 + small {
 .project_tit_box {
 	position: relative;
 	display: flex;
-	justify-content: left;
-	align-items: center;
+	/* justify-content: left;
+	align-items: center; */
 	margin-bottom: 10vw;
 }
 @media screen and (min-width: 768px) {
@@ -826,7 +826,7 @@ h1 + small {
 	.project_tit_box {
 		display: inline-flex;
 		flex-flow: column-reverse;
-		width: 30%;
+		width: 35%;
 		margin-bottom: 0;
 	}
 }
