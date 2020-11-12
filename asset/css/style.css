@@ -768,7 +768,7 @@ h1 + small {
 	.list_project .layout_center {
 		position: relative;
 		width: 90%;
-		min-height: 450px;
+		min-height: 400px;
 	}
 }
 .list_project li:nth-child(1) .contribution span,
@@ -908,10 +908,11 @@ h1 + small {
 	.list_project .preview_group,
 	.list_project .prview {
 		position: absolute;
-		top: 0;
+		top: 50%;
 		right: 0;
 		width: 60%;
 		max-width: 500px;
+		transform: translateY(-50%);
 	}
 	.list_project li:nth-child(2) {
 		padding-bottom: 80px;
