@@ -768,7 +768,13 @@ h1 + small {
 	.list_project .layout_center {
 		position: relative;
 		width: 90%;
+		max-width: 1100px;
 		min-height: 400px;
+	}
+}
+@media screen and (min-width: 1024px) {
+	.list_project li {
+		padding: 150px 0;
 	}
 }
 .list_project li:nth-child(1) .contribution span,
@@ -896,27 +902,22 @@ h1 + small {
 	align-items: center;
 	height: 60vw;
 	overflow: hidden;
+	box-shadow: 15px 15px 30px rgba(0, 0, 0, 0.8);
 }
 .list_project li:nth-child(1) .prview img {
 	height: 100%;
 }
-
 .list_project li:nth-child(2) {
 	padding-bottom: 4vw;
 }
-.list_project li:nth-child(2) .project_tit_box {
-	margin-bottom: 0;
-}
 .list_project li:nth-child(2) .prview img {
 	width: auto;
-	/* height: 110vw; */
 	height: 110%;
-	max-height: 500px;
+	max-height: 410px;
 	position: relative;
 	left: 50%;
 	transform: translateX(-48%);
 }
-
 @media screen and (min-width: 768px) {
 	.list_project .preview_group,
 	.list_project .prview {
@@ -924,6 +925,7 @@ h1 + small {
 		top: 50%;
 		right: 0;
 		width: 60%;
+		max-width: 500px;
 		transform: translateY(-50%);
 	}
 	.list_project li:nth-child(1) .prview {
@@ -935,15 +937,32 @@ h1 + small {
 	}
 	.list_project li:nth-child(2) .prview img {
 		transform: translateX(-43%);
+		max-height: 500px;
 	}
 }
-
+@media screen and (min-width: 1024px) {
+	.list_project li:nth-child(1) .prview,
+	.list_project li:nth-child(2) .prview {
+		max-width: 680px;
+	}
+	.list_project li:nth-child(1) .prview {
+		height: 420px;
+	}
+	.list_project li:nth-child(2) .prview img {
+		max-height: 610px;
+		transform: translateX(-45%);
+	}
+	.list_project .preview_group {
+		max-width: 550px;
+	}
+}
 
 
 .preview_group a {
 	float: left;
 	width: 50%;
 	overflow: hidden;
+	box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.6);
 }
 .preview_group a img {
 	width: 100%;
@@ -960,7 +979,16 @@ h1 + small {
 .preview_group a:nth-of-type(4) {
 	transform: translateX(13%);
 }
+@media screen and (min-width: 1024px) {
+	.preview_group a:nth-of-type(1),
+	.preview_group a:nth-of-type(2) {
+		transform: translateX(-20%);
+	}
+	.preview_group a:nth-of-type(3),
+	.preview_group a:nth-of-type(4) {
+		transform: translateX(20%);
 
+}
 
 
 
