@@ -567,8 +567,8 @@ h1 + small {
 	content: '';
 	display: block;
 	position: absolute;
-	top: -1vw;
-	left: 0;
+	top: -7vw;
+	left: 3vw;
 	width: 9.72vw;
 	height: 9.72vw;
 	background: url('../img/section03_tit_mark.png') center center no-repeat;
@@ -596,6 +596,8 @@ h1 + small {
 	.section03 h2::before {
 		width: 40px;
 		height: 40px;
+		top: -36px;
+		left: 25px;
 	}
 	.section03 h2::after {
 		right: auto;
@@ -706,6 +708,7 @@ h1 + small {
 	left: -59%;
 	border-width: 32vw;
 }
+.section03 .bg_container .box,
 .section03 .bg_container .line_3 {
 	display: none;
 }
@@ -743,6 +746,16 @@ h1 + small {
 @media screen and (min-width: 1200px) {
 	.section03 .bg_container .line_2 {
 		top: 12%;
+	}
+	.section03 .bg_container .box {
+		position: absolute;
+		bottom: -50px;
+		right: -70px;
+		display: block;
+		width: 118px;
+		height: 118px;
+		background: url('../img/section03_tit_mark_big.png') center center no-repeat;
+    background-size: contain;
 	}
 }
 
@@ -961,7 +974,7 @@ h1 + small {
 	transition: all 0.5s ease;
 }
 .preview_group a:hover img {
-	transform: scale(1.1);
+	transform: scale(1.05);
 }
 .preview_group a:nth-of-type(1),
 .preview_group a:nth-of-type(2) {
@@ -1007,16 +1020,32 @@ h1 + small {
 	transform: rotate(-45deg);
 }
 .last_section .bg_container .line_1 {
-	top: 60px;
-	left: -190px;
+	top: 25%;
+	left: -50%;
 }
 .last_section .bg_container .line_2 {
-	top: 60px;
-	right: -200px;
-	border-width: 50px;
+	top: 40%;
+	right: -50%;
+	border-width: 15vw;
 }
-
-
+.last_section .bg_container [class*="box_"] {
+	position: absolute;
+	z-index: -1;
+	background: url('../img/section03_tit_mark_big.png') center center no-repeat;
+	background-size: 100%;
+}
+.last_section .bg_container .box_1 {
+	bottom: 35%;
+	left: 10%;
+	width: 12vw;
+	height: 12vw;
+}
+.last_section .bg_container .box_2 {
+	top: 20%;
+	right: 10%;
+	width: 7vw;
+	height: 7vw;
+}
 
 
 
