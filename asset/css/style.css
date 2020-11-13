@@ -445,6 +445,7 @@ h1 + small {
 }
 .career_container ul li {
 	margin-top: 6vw;
+	font-family: 'NanumSquare';
 	font-size: 3.14vw;
 	font-weight: 100;
 	line-height: 2;
@@ -612,6 +613,7 @@ h1 + small {
 .section03 .layout_center > p {
 	margin-top: 2em;
 	font-size: 3.7vw;
+	line-height: 1.6;
 }
 .section03 .layout_center > p em {
 	font-weight: 800;
@@ -1004,7 +1006,7 @@ h1 + small {
 	justify-content: center;
 	align-items: center;
 	height: 50vw;
-	/* overflow: auto; */
+	max-height: 440px;
 }
 .last_section h2 {
 	font-size: 5.55vw;
@@ -1046,7 +1048,36 @@ h1 + small {
 	width: 7vw;
 	height: 7vw;
 }
-
+@media screen and (min-width: 768px) {
+	.last_section h2 {
+		font-size: 30px;
+	}
+	.last_section .bg_container .line_1 {
+		top: -50%;
+		left: 10%;
+		max-width: 1000px;
+		border-width: 5px;
+	}
+	.last_section .bg_container .line_2 {
+		top: -50%;
+		right: auto;
+		left: 60%;
+		max-width: 1000px;
+		border-width: 120px;
+	}
+	.last_section .bg_container .box_1 {
+		bottom: 90px;
+		left: 10%;
+		width: 118px;
+		height: 118px;
+	}
+	.last_section .bg_container .box_2 {
+		top: 280px;
+		right: 10%;
+		width: 64px;
+		height: 64px;
+	}
+}
 
 
 
