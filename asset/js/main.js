@@ -2,7 +2,10 @@
 (function(global, document , $){
 	'use strict'
 
-	var mainLoadTL = gsap.timeline();
+	var section01TL = gsap.timeline();
+
+	// section01TL
+	// 	.from()
  
 
 })(window, window.document, jQuery);
