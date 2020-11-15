@@ -200,12 +200,12 @@ h1 + small {
 	}
 	.strength li:first-child > span:empty {
 		height: 430px;
-    top: -445px;
-    left: 6px;
+		top: -445px;
+		left: 6px;
 	}
 	.strength li:nth-child(2) {
-    top: 400px;
-    left: 42%;
+		top: 400px;
+		left: 42%;
 	}
 	.strength li:nth-child(2) > span:empty {
 		height: 600px;
@@ -757,7 +757,7 @@ h1 + small {
 		width: 118px;
 		height: 118px;
 		background: url('../img/section03_tit_mark_big.png') center center no-repeat;
-    background-size: contain;
+		background-size: contain;
 	}
 }
 
