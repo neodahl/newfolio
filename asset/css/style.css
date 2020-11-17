@@ -564,8 +564,7 @@ h1 + small {
 	padding-left: 13.881vw;
 	font-size: 10.926vw;
 }
-.section03 h2::before {
-	content: '';
+.section03 h2 small:first-of-type:empty {
 	display: block;
 	position: absolute;
 	top: -7vw;
@@ -575,7 +574,7 @@ h1 + small {
 	background: url('../img/section03_tit_mark.png') center center no-repeat;
 	background-size: contain;
 }
-.section03 h2::after {
+.section03 h2 small:last-of-type:empty {
 	content: '';
 	display: block;
 	position: absolute;
@@ -584,6 +583,7 @@ h1 + small {
 	width: 9vw;
 	border-top: 2px solid #009cff;
 	transform: rotate(-45deg);
+	transform-origin: top right;
 }
 @media screen and (min-width: 768px) {
 	.section03 {
@@ -594,13 +594,13 @@ h1 + small {
 		padding-left: 65px;
 		margin-left: -25px;
 	}
-	.section03 h2::before {
+	.section03 h2 small:first-of-type:empty {
 		width: 40px;
 		height: 40px;
 		top: -36px;
 		left: 25px;
 	}
-	.section03 h2::after {
+	.section03 h2 small:last-of-type:empty {
 		right: auto;
 		left: 370px;
 		width: 50px;
@@ -698,16 +698,27 @@ h1 + small {
 }
 .section03 .bg_container [class*="line_"] {
 	position: absolute;
-	width: 200%;
+	width: 100%;
+}
+.section03 .bg_container [class*="line_"]::before {
+	content: '';
+	display: block;
+	width: 100%;
 	border-top: 2vw solid #009cff;
 	transform: rotate(-45deg);
 }
 .section03 .bg_container .line_1 {
-	left: -75%;
+	width: 100%;
+	left: -46%;
+	top: 15%;
 }
+
 .section03 .bg_container .line_2 {
-	top: 20vw;
-	left: -59%;
+	width: 200%;
+	top: 10%;
+	left: -46%;
+}
+.section03 .bg_container .line_2::before {
 	border-width: 32vw;
 }
 .section03 .bg_container .box,
@@ -729,12 +740,16 @@ h1 + small {
 		border-width: 10px;
 	}
 	.section03 .bg_container .line_1 {
-		top: -10%;
-		left: -100%;
+		top: -11%;
+	}
+	.section03 .bg_container .line_1::before {
+		border-width: 8px;
 	}
 	.section03 .bg_container .line_2 {
 		top: 7%;
 		left: -100%;
+	}
+	.section03 .bg_container .line_2::before {
 		border-width: 150px;
 	}
 	.section03 .bg_container .line_3 {
@@ -742,10 +757,15 @@ h1 + small {
 		right: -610px;
 		bottom: 430px;
 		width: 800px;
-		border-width: 4px;
+	}
+	.section03 .bg_container .line_3::before {
+		border-width: 10px;
 	}
 }
 @media screen and (min-width: 1200px) {
+	.section03 .bg_container .line_1 {
+		top: -15%;
+	}
 	.section03 .bg_container .line_2 {
 		top: 12%;
 	}
