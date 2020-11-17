@@ -49,6 +49,31 @@
 		.from('.section02 .skills dd span', {stagger: 0.1, duration: 0.3, opacity: 0, x: 10}, '-=0.4')
 		;
 
+/* 
+	// Section03 Animation
+	var section03_TL = gsap.timeline({
+		scrollTrigger: {
+			markers: true,
+			trigger: '.section03',
+			// start: 'top 80%',
+			toggleActions: 'restart none none none',
+			onEnter: function() {
+				console.log('enter');
+			},
+			onLeaveBack: function() {
+				console.log('onLeaveBack');
+			}
+
+		}
+	});
+	section03_TL
+		.from('.section03 h2', {duration: 2, opacity: 0})
+		// .from('.section03 .bg_container .line_1', {duration: 0.5, left: -100, top: -100}, 0)
+		// .from('.section03 .bg_container .line_1', {duration: 0.5, left: 0, top: -1000}, 0)
+		;
+
+ */
+
 
 })(window, window.document);
 
