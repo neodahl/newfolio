@@ -53,10 +53,10 @@
 	// Section03 Animation
 	var section03_TL = gsap.timeline({
 		scrollTrigger: {
-			markers: true,
+			// markers: true,
 			trigger: '.section03',
-			// start: 'top 80%',
-			toggleActions: 'restart none none none',
+			start: 'top 60%',
+			toggleActions: 'restart none none reverse',
 		}
 	});
 	section03_TL
@@ -69,6 +69,53 @@
 		.from('.section03 .bg_container .line_2', {duration: 1, scale: 0 , x: -2000, y: 2000}, 0.5)
 		.from('.section03 .bg_container .line_3', {duration: 1, scale: 0 , x: 1000, y: -1000}, 0.5)
 		;
+
+	// Section04 Animation
+	var section04_01_TL = gsap.timeline({
+		scrollTrigger: {
+			markers: true,
+			trigger: '.section04 .list_project > li:nth-child(1)',
+			start: 'top 60%',
+			toggleActions: 'restart none none reverse',
+		}
+	});
+	section04_01_TL
+		.from('.section04 .list_project > li:nth-child(1) h3', {duration: 1, opacity: 0, x: 10})
+		.from('.section04 .list_project > li:nth-child(1) .project_tit_box', {duration: 1, opacity: 0, x: 10}, '-=0.4')
+		.from('.section04 .list_project > li:nth-child(1) .prview', {duration: 1, opacity: 0, y:10}, 0.5)
+		.from('.section04 .list_project > li:nth-child(1) .contribution', {duration: 1, opacity: 0, y: 10}, '-=0.6')
+		;
+
+	var section04_02_TL = gsap.timeline({
+		scrollTrigger: {
+			markers: true,
+			trigger: '.section04 .list_project > li:nth-child(2)',
+			start: 'top 60%',
+			toggleActions: 'restart none none reverse',
+		}
+	});
+	section04_02_TL
+		.from('.section04 .list_project > li:nth-child(2) h3', {duration: 1, opacity: 0, x: 10})
+		.from('.section04 .list_project > li:nth-child(2) .project_tit_box', {duration: 1, opacity: 0, x: 10}, '-=0.4')
+		.from('.section04 .list_project > li:nth-child(2) .prview', {duration: 1, opacity: 0, y: 10}, 0.5)
+		.from('.section04 .list_project > li:nth-child(2) .contribution', {duration: 1, opacity: 0, y: 10}, '-=0.6')
+		;
+
+	var section04_03_TL = gsap.timeline({
+		scrollTrigger: {
+			markers: true,
+			trigger: '.section04 .list_project > li:nth-child(3)',
+			start: 'top 60%',
+			toggleActions: 'restart none none reverse',
+		}
+	});
+	section04_03_TL
+		.from('.section04 .list_project > li:nth-child(3) h3', {duration: 1, opacity: 0, x: 10})
+		.from('.section04 .list_project > li:nth-child(3) .project_tit_box', {duration: 1, opacity: 0, x: 10}, '-=0.4')
+		.from('.section04 .list_project > li:nth-child(3) .preview_group a', { stagger: 0.2, duration: 1, opacity: 0, y: 10}, 0.5)
+		.from('.section04 .list_project > li:nth-child(3) .contribution', {duration: 1, opacity: 0, y: 10}, '-=0.6')
+		;
+
 
 
 
