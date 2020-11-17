@@ -73,7 +73,7 @@
 	// Section04 Animation
 	var section04_01_TL = gsap.timeline({
 		scrollTrigger: {
-			markers: true,
+			// markers: true,
 			trigger: '.section04 .list_project > li:nth-child(1)',
 			start: 'top 60%',
 			toggleActions: 'restart none none reverse',
@@ -88,7 +88,7 @@
 
 	var section04_02_TL = gsap.timeline({
 		scrollTrigger: {
-			markers: true,
+			// markers: true,
 			trigger: '.section04 .list_project > li:nth-child(2)',
 			start: 'top 60%',
 			toggleActions: 'restart none none reverse',
@@ -103,7 +103,7 @@
 
 	var section04_03_TL = gsap.timeline({
 		scrollTrigger: {
-			markers: true,
+			// markers: true,
 			trigger: '.section04 .list_project > li:nth-child(3)',
 			start: 'top 60%',
 			toggleActions: 'restart none none reverse',
@@ -116,9 +116,19 @@
 		.from('.section04 .list_project > li:nth-child(3) .contribution', {duration: 1, opacity: 0, y: 10}, '-=0.6')
 		;
 
-
-
-
+	// Last Section Animation
+	var lastSection_TL = gsap.timeline({
+		scrollTrigger: {
+			// markers: true,
+			trigger: '.last_section',
+			toggleActions: 'restart none none reverse',
+		}
+	});
+	lastSection_TL
+		.from('.last_section h2', {duration: 1, scaleY: 0}, 0.7)
+		.from('.last_section .bg_container .line_1, .last_section .bg_container .line_2', {stagger:0.2, duration: 1, scale: 0 , x: 1000, y: -1000}, 0)
+		.from('.last_section .bg_container .box_1, .last_section .bg_container .box_2', {stagger:0.2, duration: 1.5, opacity:0, y: 30}, 0.5)
+		;
 
 })(window, window.document);
 

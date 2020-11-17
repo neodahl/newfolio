@@ -917,9 +917,6 @@ h1 + small {
 }
 
 
-
-
-
 .list_project .prview {
 	display: block;
 }
@@ -1019,7 +1016,7 @@ h1 + small {
 
 
 
-
+/* Last Section */
 .last_section {
 	position: relative;
 	display: flex;
@@ -1038,6 +1035,10 @@ h1 + small {
 	position: absolute;
 	z-index: -1;
 	width: 100%;
+}
+.last_section .bg_container [class*="line_"]::before {
+	content: '';
+	display: block;
 	border-top: 2px solid #009cff;
 	transform: rotate(-45deg);
 }
@@ -1048,6 +1049,8 @@ h1 + small {
 .last_section .bg_container .line_2 {
 	top: 40%;
 	right: -50%;
+}
+.last_section .bg_container .line_2::before {
 	border-width: 15vw;
 }
 .last_section .bg_container [class*="box_"] {
@@ -1076,6 +1079,8 @@ h1 + small {
 		top: -50%;
 		left: 10%;
 		max-width: 1000px;
+	}
+	.last_section .bg_container .line_1::before {
 		border-width: 5px;
 	}
 	.last_section .bg_container .line_2 {
@@ -1083,6 +1088,8 @@ h1 + small {
 		right: auto;
 		left: 60%;
 		max-width: 1000px;
+	}
+	.last_section .bg_container .line_2::before {
 		border-width: 120px;
 	}
 	.last_section .bg_container .box_1 {
