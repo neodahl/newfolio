@@ -24,8 +24,8 @@
 		}
 	});
 	section02_01_TL
-		.from('.strength li > span', {stagger: 0.2, duration: 1.5, opacity: 0, height:0})
-		.from('.strength li > span', {stagger: 0.3, duration: 1.2, y: 70}, 0)
+		.from('.strength li > span', {stagger: 0.2, duration: 1.5, opacity: 0})
+		.from('.strength li > span', {stagger: 0.1, duration: 1, y: -100}, 0)
 		.from('.strength li > em', {stagger: 0.2, duration: 1.5, opacity: 0, x: +200}, 0.5) // x 값이 적용이 안되는것 같은디..
 		.from('.strength li > p', {stagger: 0.2, duration: 1, opacity: 0, x: 20}, 1)
 		;
@@ -43,9 +43,9 @@
 		.from('.section02 .box_title + p', {duration: 0.5, opacity: 0, y: 20}, 0.5)
 		.from('.section02 .box_title + p span', {duration: 0.5, x: -20}, 0.5)
 		.from('.section02 .box_title + p small', {duration: 0.5, x: 20}, 0.5)
-		.from('.section02 .career_container > span', {duration: 0.3, opacity: 0, y: 10})
+		.from('.section02 .career_container > span', {duration: 0.3, opacity: 0, y: 10}, 1)
 		.from('.section02 .career_container > ul li', {stagger: 0.1, duration: 0.5, opacity: 0, y: 10}, '-=0.2')
-		.from('.section02 .skills dt', {stagger: 0.2, duration: 1, opacity: 0, y: 10}, '-=0.2')
+		.from('.section02 .skills dt', {stagger: 0.2, duration: 1, opacity: 0, y: 10}, 1)
 		.from('.section02 .skills dd span', {stagger: 0.1, duration: 0.3, opacity: 0, x: 10}, '-=0.4')
 		;
 
