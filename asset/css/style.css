@@ -412,7 +412,11 @@ h1 + small {
 		font-size: 30px;
 	}
 }
-
+@media screen and (min-width: 768px) {
+	.career_container .box_title {
+		margin-bottom: 2em;
+	}
+}
 
 
 
@@ -436,13 +440,6 @@ h1 + small {
 	font-size: 2.4vw;
 	font-weight: 100;
 }
-.career_container > span {
-	display: block;
-	margin-bottom: 10vw;
-	font-size: 4.44vw;
-	font-weight: 700;
-	color: #fff;
-}
 .career_container ul li {
 	margin-top: 6vw;
 	font-family: 'NanumSquare';
@@ -462,9 +459,9 @@ h1 + small {
 		content: '';
 		position: absolute;
 		bottom: -0.5em;
-		left: 135px;
+		left: 105px;
 		display: block;
-		width: 270px;
+		width: 190px;
 		border-bottom: 2px solid #009cff;
 	}
 	.career_container > p span {
@@ -473,12 +470,8 @@ h1 + small {
 	.career_container > p small {
 		display: inline-block;
 		margin: 0;
-		margin-left:2.5em;
+		margin-left: 0.5em;
 		font-size: inherit;
-	}
-	.career_container > span {
-		margin: 1.5em 0 1em;
-		font-size: 26px;
 	}
 	.career_container ul li {
 		position: relative;
