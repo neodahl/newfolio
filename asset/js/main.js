@@ -81,7 +81,7 @@
 	section04_01_TL
 		.from('.section04 .list_project > li:nth-child(1) h3', {duration: 1, opacity: 0, x: 10})
 		.from('.section04 .list_project > li:nth-child(1) .project_tit_box', {duration: 1, opacity: 0, x: 10}, '-=0.4')
-		.from('.section04 .list_project > li:nth-child(1) .prview', {duration: 1, opacity: 0, y:10}, 0.5)
+		.from('.section04 .list_project > li:nth-child(1) .prview', {duration: 1, opacity: 0}, 0.5)
 		.from('.section04 .list_project > li:nth-child(1) .contribution', {duration: 1, opacity: 0, y: 10}, '-=0.6')
 		;
 
