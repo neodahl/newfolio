@@ -6,11 +6,11 @@
 	var section01_TL = gsap.timeline();
 
 	section01_TL
-		.from('h1 > small', {duration: 0.5, opacity: 0, y: -10}, 0.2)
-		.from('h1 > span', {duration: 0.5, opacity: 0, y: -10}, '-=0.3')
-		.from('h1 + small', {duration: 0.5, opacity: 0, y: -10}, '-=0.3')
-		.from('.section01 .right_msg', {duration: 1, opacity: 0, y: -20})
-		.from('.section01 .img_conatainer', {duration: 3, opacity: 0}, '-=1.3')
+		.fromTo('h1 > small', {opacity: 0, y: -10}, {duration: 0.5, opacity: 1, y: 0}, 0.5)
+		.fromTo('h1 > span', {opacity: 0, y: -10}, {duration: 0.5, opacity: 1, y: 0}, '-=0.3')
+		.fromTo('h1 + small', {opacity: 0, y: -10}, {duration: 0.5, opacity: 0.7, y: 0}, '-=0.3')
+		.fromTo('.section01 .right_msg', {opacity: 0, y: -20}, {duration: 1, opacity: 1, y: 0})
+		.fromTo('.section01 .img_conatainer',{opacity: 0, y: -20}, {duration: 3, opacity: 1}, '-=1.3')
 		.from('.section01 .img_conatainer', {duration: 2, y: 20, x:20}, '-=3')
 		;
 

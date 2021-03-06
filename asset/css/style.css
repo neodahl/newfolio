@@ -54,6 +54,8 @@ h1 > small {
 	letter-spacing: 0.6em;
 	color: #8194c2;
 	line-height: 1.6;
+
+	opacity: 0;
 }
 h1 > span {
 	display: block;
@@ -63,6 +65,8 @@ h1 > span {
 	font-weight: 100;
 	letter-spacing: 0.1em;
 	text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+
+	opacity: 0;
 }
 h1 + small {
 	display: block;
@@ -70,8 +74,10 @@ h1 + small {
 	font-size: 2.59vw;
 	font-weight: 100;
 	color: #fff;
-	opacity: 0.9;
+	/* opacity: 0.9; */
+	opacity: 0;
 }
+
 @media screen and (min-width: 1024px) {
 	h1 br {
 		display: none;
@@ -95,6 +101,7 @@ h1 + small {
 	top: 45%;
 	left: 50%;
 	width: 50%;
+	opacity: 0;
 }
 .section01 .img_conatainer img {
 	width: 100%
@@ -131,6 +138,8 @@ h1 + small {
 	color: #8194c2;
 	transform: rotate(90deg);
 	transform-origin: top right;
+
+	opacity: 0;
 }
 @media screen and (min-width: 1024px) {
 	.section01 .right_msg {
