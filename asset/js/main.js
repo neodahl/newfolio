@@ -10,8 +10,8 @@
 		.fromTo('h1 > span', {opacity: 0, y: -10}, {duration: 0.5, opacity: 1, y: 0}, '-=0.3')
 		.fromTo('h1 + small', {opacity: 0, y: -10}, {duration: 0.5, opacity: 0.7, y: 0}, '-=0.3')
 		.fromTo('.section01 .right_msg', {opacity: 0, y: -20}, {duration: 1, opacity: 1, y: 0})
-		.fromTo('.section01 .img_conatainer',{opacity: 0, y: -20}, {duration: 3, opacity: 1}, '-=1.3')
-		.from('.section01 .img_conatainer', {duration: 2, y: 20, x:20}, '-=3')
+		.fromTo('.section01 .img_conatainer',{opacity: 0}, {duration: 3, opacity: 1}, '-=1.3')
+		.fromTo('.section01 .img_conatainer', {y: 20, x:20}, {duration: 2, y: 0, x:0}, '-=3')
 		;
 
 	// Section02 Animation
