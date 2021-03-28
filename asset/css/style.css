@@ -1025,8 +1025,8 @@ h1 + small {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	height: 50vw;
-	max-height: 440px;
+	height: 100vw;
+	max-height: 600px;
 }
 .last_section h2 {
 	font-size: 5.55vw;
@@ -1079,15 +1079,15 @@ h1 + small {
 		font-size: 30px;
 	}
 	.last_section .bg_container .line_1 {
-		top: -50%;
-		left: 10%;
+		top: -21%;
+		left: -6%;
 		max-width: 1000px;
 	}
 	.last_section .bg_container .line_1::before {
 		border-width: 5px;
 	}
 	.last_section .bg_container .line_2 {
-		top: -50%;
+		top: 23%;
 		right: auto;
 		left: 60%;
 		max-width: 1000px;
@@ -1102,18 +1102,29 @@ h1 + small {
 		height: 118px;
 	}
 	.last_section .bg_container .box_2 {
-		top: 280px;
+		top: 120px;
 		right: 10%;
 		width: 64px;
 		height: 64px;
 	}
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1024px) {
 	.last_section h2 {
 		font-size: 45px;
 	}
 }
-
+@media screen and (min-width: 1200px) {
+	.last_section h2 {
+		font-size: 60px;
+	}
+	.last_section .bg_container .line_2 { 
+		top: -35%;
+		left: 59%;
+	}
+	.last_section .bg_container .box_2 {
+		top: 330px;
+	}
+}
 
 
 
