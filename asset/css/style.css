@@ -295,6 +295,7 @@ h1 + small {
 
 
 .strength li > em {
+	display: block;
 	line-height: 3;
 	font-size: 3.8vw;
 	font-weight: 900;
@@ -469,9 +470,9 @@ h1 + small {
 		content: '';
 		position: absolute;
 		bottom: -0.5em;
-		left: 105px;
+		left: 53px;
 		display: block;
-		width: 190px;
+		width: 90px;
 		border-bottom: 2px solid #009cff;
 	}
 	.career_container > p span {
